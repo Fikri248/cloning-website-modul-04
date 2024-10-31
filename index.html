@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloning Website by Fikri</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/TU.png">
+
+</head>
+<body>
+    <div class="header-background">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="https://bis-sby.telkomuniversity.ac.id/wp-content/uploads/2024/04/LOGO-LIGHT-UPPER1.png" alt="Logo">
+                </div>
+                <div class="hamburger-menu purple" id="hamburgerMenuPurple" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <div class="menu" id="menu">
+                    <div class="menu-header">
+                        <span class="close-btn" onclick="toggleMenu()">&times;</span>
+                    </div>
+                    <ul>
+                        <li>Halaman Utama</li>
+                        <li class="menu-item" onclick="toggleSubmenu(this)">Tentang Kami
+                            <i class="fas fa-chevron-down arrow"></i>
+                            <ul class="submenu">
+                                <li>Informasi Umum</li>
+                                <li>Organisasi</li>
+                                <li>Penghargaan</li>
+                                <li>Kerja Sama</li>
+                            </ul>
+                        </li>
+                        <li class="menu-item" onclick="toggleSubmenu(this)">Akademik
+                            <i class="fas fa-chevron-down arrow"></i>
+                            <ul class="submenu">
+                                <li>Struktur Kurikulum</li>
+                                <li>Rencana Pembelajaran</li>
+                                <li>Beasiswa</li>
+                            </ul>
+                        </li>
+                        <li class="menu-item" onclick="toggleSubmenu(this)">Kehidupan Kampus
+                            <i class="fas fa-chevron-down arrow"></i>
+                            <ul class="submenu">
+                                <li>Kehidupan di Surabaya</li>
+                                <li>Galeri Kegiatan</li>
+                                <li>Penelitian</li>
+                                <li>Pengabdian Masyarakat</li>
+                            </ul>
+                        </li>
+                        <li>Dosen & Staf</li>
+                        <li class="blog">Blog</li>
+                    </ul>
+                    <button class="btn-daftar">Daftar Sekarang</button>
+                </div>                
+                
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="#">Tentang Kami <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Informasi Umum</a></li>
+                            <li><a href="#">Organisasi</a></li>
+                            <li><a href="#">Penghargaan</a></li>
+                            <li><a href="#">Kerja Sama</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Akademik <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Struktur Kurikulum</a></li>
+                            <li><a href="#">Rencana Belajar</a></li>
+                            <li><a href="#">Beasiswa</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Kehidupan Kampus <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Kehidupan di Surabaya</a></li>
+                            <li><a href="#">Galeri Kegiatan</a></li>
+                            <li><a href="#">Penelitian</a></li>
+                            <li><a href="#">Pengabdian Masyarakat</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Dosen & Staf</a></li>
+                </ul>
+                
+                <div class="search-icon">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
+                <div class="search">
+                    <a href="#" class="button">Daftar Sekarang</a>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <h1>Pentingnya Integritas sebagai Fondasi Karakter </h1>
+            <h1>Mahasiswa Sistem Informasi</h1>
+            <p>2 JAN 2024 / ARTIKEL</p>
+        </div>
+        <div class="sticky-navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/SI.png" alt="Logo">
+                </div>
+                <div class="hamburger-menu white" id="hamburgerMenuWhite" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="#">Tentang Kami <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Informasi Umum</a></li>
+                            <li><a href="#">Organisasi</a></li>
+                            <li><a href="#">Penghargaan</a></li>
+                            <li><a href="#">Kerja Sama</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Akademik <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Struktur Kurikulum</a></li>
+                            <li><a href="#">Rencana Belajar</a></li>
+                            <li><a href="#">Beasiswa</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Kehidupan Kampus <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Kehidupan di Surabaya</a></li>
+                            <li><a href="#">Galeri Kegiatan</a></li>
+                            <li><a href="#">Penelitian</a></li>
+                            <li><a href="#">Pengabdian Masyarakat</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Dosen & Staf</a></li>
+                </ul>                
+                <div class="search">
+                    <a href="#" class="button">Daftar Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+            <div class="article">
+                <div class="article-header"></div>
+                <img src="https://bis-sby.telkomuniversity.ac.id/wp-content/uploads/2024/06/Teks-paragraf-Anda-scaled-e1717320174203-2048x1208.jpg" alt="Article Image">
+                <p>Di era modern ini, kejujuran dan konsistensi dengan tindakan dan ucapan adalah sesuatu yang penting. Salah satu untuk mendapatkan sifat itu adalah dengan menerapkan prinsip integritas. Integritas adalah mutu, sifat, atau keadaan yang menunjukkan kesatuan yang utuh sehingga memiliki potensi dan kemampuan yang memancarkan kewibawaan atau kejujuran. Jadi, semua perbuatan dan perkataan yang dilakukan seseorang akan mencerminkan integritas orang tersebut. Oleh karena itu, kita perlu memiliki sebuah prinsip integritas agar mendapat kepercayaan orang lain, membangun reputasi, dan juga membangun karakter positif. Integritas adalah prinsip yang perlu dimiliki oleh semua orang, bahkan mahasiswa.</p>
+                <p>Seperti yang disinggung oleh Rektor Telkom University, Prof. Dr. Adiwijaya pada EJLS bahwa seluruh mahasiswa perlu memiliki integritas. Terutama mahasiswa Telkom University. Meskipun Telkom University mempunyai banyak kampus yaitu Bandung, Jakarta dan Surabaya, tetapi semuanya harus memiliki integritas yang sama. Hal ini sangat penting karena integritas tidak hanya memengaruhi reputasi individu, tetapi juga berperan penting dalam kualitas pendidikan dan profiesionalisme di masa depan. Mahasiswa bisa menerapkan integritas dengan mengerjakan tugas dengan orisinal dan jujur, sehingga kompentensi yang mereka dapatkan adalah hasil dari usaha dan kemampuan sendiri. Dalam rangka memperkuat prinsip ini, Program Studi Sistem Informasi mengadakan kuliah tamu yang membahas tentang pentingnya integritas.</p>
+                <p>Didalam kulliah tamu tersebut, dijelaskan bahwa integritas yang sangat penting ini dipengaruhi mempunyai 2 faktor. Faktor yang pertama adalah faktor internal. Faktor internal dalam integritas ini merupakan hal yang berasal dari dalam diri individu, misalnya nilai profesionalitas dan norma seseorang. Faktor internal ini menekankan pentingnya dedikasi terhadap etika. Faktor internal juga seringkali didorang oleh keyakinan agama dan prinsip moral yang kuat. Tetapi, integritas yang bergantung hanya pada faktor internal saja belum cukup. Selain faktor internal, terdapat juga faktor eksternal yang juga berperan penting dalam mendukung integritas suatu individu.</p>
+                <p>Faktor eksternal juga memiliki peran penting untuk mendukung integritas individu. Dalam perkuliahan, faktor eksternal bisa meliputi sistem pengawasan dan peraturan yang diterapkan baik untuk mahasiswa maupun dosen. Misalnya, pada Telkom University Surabaya yang dilengkapi dengan CCTV yang bisa membantu mendeteksi penyalahgunaan fasilitas kampus. Tanpa adanya hukuman atau sanksi, mahasiswa diharapkan untuk mengembangkan integritas yang kuat di dalam diri mereka sendiri.</p>
+                <p>Pada kuliah tamu, juga diberikan contoh nyata pentingnya faktor eksternal integritas. Contoh nyata tersebut terjadi di Univeristy Teknologi Mara, Malaysia. Di sana, pernah terjadi kejadian dosen menolak suap dari mahasiswa yang melanggar aturan. Mahasiswa ini diberi sanksi harus mengulang semester depan. Namun, mahasiswa ini malah ingin melakukan suap kepada dosen. Meskipun mahasiswa itu memiliki relasi dengan orang penting, dosen tersebut tetap berpegang teguh pada integritasnya karena adanya peraturan dan pengawasan yang ketat. Hal ini menunjukkan bahwa faktor internal seperti peraturan dan pengawasan bisa memperkuat integritas seseorang.</p>
+                <p>Seperti yang dibahas pada kuliah tamu oleh Ainatul Fathiyah Abdul Rahim, integritas adalah prinsip yang harus dimiliki oleh mahasiswa Sistem Infomrasi untuk memastikan kualiatas pendidikan dan profesionalisme yang tinggi. Webinar kuliah tamu internasional tersebut menekankan pentingnya integritas bagi mahasiswa dan bagaimana faktor internal dan  eksternal seperti peraturan bisa membantu membangun kepercayaan dan reputasi untuk masa depan.</p>
+                <p>Ternyata penting sekali ya, integritas untuk mahasiswa. Kalian juga bisa mendapatkan ilmu menarik lainnya dengan mengikuti instagram Prodi Sistem Informasi di <a href="https://www.instagram.com/is.telkomsurabaya?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">sini</a>. Selain itu, kalian juga bisa mengunjungi websitenya untuk mendapatkan informasi lengkapnya di <a href="https://bis-sby.telkomuniversity.ac.id/" target="_blank">sini</a>.</p>
+                <div class="visitor-tracking">
+                    <p><i class="fas fa-chart-line"></i> Jumlah Pengunjung: 31</p>
+                </div>
+                <div class="tags-section">
+                    <h4>Tags</h4>
+                    <div class="tag-list">
+                        <span class="tag"># Integritas</span>
+                        <span class="tag"># Kuliah Tamu</span>
+                        <span class="tag"># Mahasiswa Sistem Informasi</span>
+                    </div>
+                    
+                    <div class="social-media-icons">
+                        <i class="fab fa-facebook-f social-icon"></i>
+                        <i class="fab fa-twitter social-icon"></i>
+                        <i class="fab fa-linkedin-in social-icon"></i>
+                        <i class="fab fa-whatsapp social-icon"></i>
+                    </div>                   
+                </div>
+                <div class="related-articles">
+                    <h3>Artikel Terkait</h3>
+                    <div class="related-articles-list">
+                        <div class="related-article">
+                            <img src="images/IS.jpg" alt="Related Article 1" >
+                            <h4>Perbedaan Sistem Informasi dan Informatika, Memahami Dua Cabang Ilmu Teknologi dalam Pengembangan dan Implementasinya.</h4>
+                            <p>October 6, 2024</p>
+                        </div>
+                        <div class="related-article">
+                            <img src="images/JS.jpg" alt="Related Article 2">
+                            <h4>JavaScript, Keunggulan Bahasa Pemrograman Yang Masih Ramai Hingga Saat Ini</h4>
+                            <p>September 27, 2024</p>
+                        </div>
+                        <div class="related-article">
+                            <img src="images/AI.jpg" alt="Related Article 3">
+                            <h4>Explainable AI: Pengertian, Cara Kerja, Pentingnya, dan Penerapannya</h4>
+                            <p>August 29, 2024</p>
+                        </div>
+                    </div>
+                </div>             
+            </div>        
+        <aside class="sidebar">
+            <div class="search-widget">
+                <h3>Cari Artikel</h3>
+                <input type="text" placeholder="Search">
+                <button><i class="fas fa-search"></i></button>
+            </div>            
+            <div class="categories-widget">
+                <h3>Kategori Artikel:</h3>
+                <ul>
+                    <li>Artikel (12)</li>
+                    <li>Berita (44)</li>
+                    <li>Kompetisi (9)</li>
+                    <li>Penelitian (4)</li>
+                    <li>Pengabdian (8)</li>
+                    <li>Pengumuman (13)</li>
+                </ul>
+            </div>
+            <div class="articles-widget">
+                <div class="popular-articles">
+                    <h3>Artikel Terpopuler</h3>
+                    <ul>
+                        <li>Mahasiswi Sistem Informasi Menjadi Pembicara Internasional di Acara Bergengsi</li>
+                        <li>Prestasi Tiada Henti: Mahasiswa SI Telkom University Surabaya Raih Penghargaan di Innovillage 2023</li>
+                        <li>Gemerlap Dies Natalis ITTelkom Surabaya ke-5 : Technologia 2.0</li>
+                        <li>Menembus Batas Kreativitas, Mahasiswa SI Juara Lagi Bidang UI/UX Tingkat Nasional</li>
+                        <li>Meraih Inovasi dengan Teknologi : Anagata Amerta 2023</li>
+                    </ul>
+                </div>
+                <div class="latest-articles">
+                    <h3>Artikel Terbaru</h3>
+                    <ul>
+                        <li>Perbedaan Sistem Informasi dan Informatika, Memahami  Dua Cabang Ilmu Teknologi dalam Pengembangan dan Implementasinya.</li>
+                        <li>JavaScript, Keunggulan Bahasa Pemrograman Yang Masih Ramai Hingga Saat Ini</li>
+                        <li>Webinar : Mengungkap Modus Penipuan Digital (Cerita Korban Part 1)</li>
+                        <li>Open Recruitment Asisten Laboratorium & Asisten Praktikum Prodi SI</li>
+                        <li>Explainable AI: Pengertian, Cara Kerja, Pentingnya, dan Penerapannya</li>
+                    </ul>
+                </div>
+                <div class="tags-box">
+                    <h3>Tags</h3>
+                    <div class="tags">
+                        <span class="small">2024 Business Canva cumlaude East Java</span>
+                        <span class="small">Student Leader Summit edugaete edugate</span>
+                        <span class="small">Founder functional consultant guest lecture</span>
+                        <span class="small">informatika Inkubator Startup Innovillage 2023</span>
+                        <span class="special">
+                            <span class="small">Integritas</span> 
+                            <span class="medium">ITTS</span> 
+                            <span class="small">JavaScript Jurnal Kelebihan</span>
+                        </span>
+                        <span class="special">
+                            <span class="small">Keunggulan</span> 
+                            <span class="medium">Kuliah Tamu</span> 
+                            <span class="small">Lowongan</span>
+                        </span>
+                        <span class="special">
+                            <span class="medium">mahasiswa</span>  
+                            <span class="small">Mahasiswa Sistem</span>
+                        </span>
+                        <span class="special">
+                            <span class="small">Informasi</span> 
+                            <span class="medium">Penelitian</span> 
+                            <span class="small">penghargaan</span>
+                        </span>
+                        <span class="special">
+                            <span class="medium">Pengmas</span> 
+                            <span class="small">Pengusaha perbedaan sistem</span>
+                        </span>
+                        <span class="small">informasi dan informatika prestasi Prestasi</span>
+                        <span class="small">Mahasiswa REKTOR PERTAMA Relawan TIK</span>
+                        <span class="special">
+                            <span class="small">SAP</span> 
+                            <span class="large">Sistem</span>
+                        </span>
+                        <span class="special">
+                            <span class="large">Informasi</span> 
+                            <span class="small">SISTER Startup</span>
+                        </span>
+                        <span class="small">Digital Studi Banding Surabaya teknik</span>
+                        <span class="special">
+                            <span class="small">Informatika Telkom</span> 
+                            <span class="large">Telkom</span>
+                        </span>
+                        <span class="large">University Surabaya</span>
+                        <span class="small">University Webinar White Swindler wisuda</span>
+                    </div>
+                </div>                
+            </div>                        
+        </aside>
+    </div>
+    <div class="footer-background">
+        <div class="footer-container">
+            <div class="footer-logo-wrapper">
+                <img src="images/3Logo.png" alt="Logo" class="footer-logo">
+                <div class="footer-text">
+                    <p>Program Studi Sistem Informasi sudah ada sejak berdirinya Universitas Telkom Surabaya, berdasarkan Keputusan Menteri Riset, Teknologi, dan Pendidikan Tinggi no. 733 / KPT / I / 2018.</p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> <strong>Kampus Surabaya</strong><br>
+                        Jl. Ketintang No. 156, Surabaya, Jawa Timur 60231
+                    </p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Tautan Bermanfaat</h4>
+                <ul>
+                    <li><a href="#">Telkom Indonesia</a></li>
+                    <li><a href="#">Yayasan Pendidikan Telkom</a></li>
+                    <li><a href="#">Universitas Telkom Surabaya</a></li>
+                    <li><a href="#">Website SMB</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact-social">
+                <div class="footer-contact">
+                    <h4>Info Kontak</h4>
+                <p><i class="fas fa-phone"></i> <strong>Telepon:</strong></p>
+                <p>+62 31 8280800</p>
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong></p>
+                <p>is@ittelkom-sby.ac.id</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Media Sosial</h4>
+                    <div class="social-icons">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 2024 Information Systems Telkom University Surabaya</p>
+        </div>
+    </div>
+    <script src="sticky-navbar.js"></script> 
+</body>
+</html>
